@@ -14,23 +14,34 @@ body {
 .background {
     width: 100%;
     height: 100vh;
-    background: url('bg.jpg') no-repeat;
+    background: url('bg.jpg') no-repeat;;
     background-size: cover;
     background-position: center;
     filter: blur(10px);
 }
 .container {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
     height: 550px;
-    background: url('bg.jpg') no-repeat;
+    background: url('bg.jpg') no-repeat;;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(34, 139, 34, 0.6),
+                0 0 50px rgba(46, 139, 87, 0.4),
+                0 0 75px rgba(60, 179, 113, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(34, 139, 34, 0.6),
+                0 0 40px rgba(46, 139, 87, 0.4),
+                0 0 60px rgba(60, 179, 113, 0.3);
 }
 
 .container .content {
@@ -73,7 +84,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 56%);
+    width: calc(100% - 58%);
     height: 100%;
     overflow: hidden;
 }
@@ -165,16 +176,24 @@ body {
 .btn{
     width: 100%;
     height: 45px;
-    background: #00b33c;
-    border: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     outline: none;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
     color: #e4e4e4;
     font-weight: 500;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    background: #00b33c;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
 
 .form-box .login-register {
     font-size: 14.5px;
@@ -192,4 +211,15 @@ body {
 .login-register p a:hover {
     text-decoration: underline;
 
+}
+
+@keyframes forest-glow {
+    0% {
+        box-shadow: 0 0 20px rgba(50, 205, 50, 0.4),
+                    inset 0 0 15px rgba(34, 139, 34, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(60, 179, 113, 0.6),
+                    inset 0 0 20px rgba(46, 139, 87, 0.4);
+    }
 }
