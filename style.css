@@ -24,7 +24,7 @@ body {
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 65%;
     height: 550px;
     background: url('bg.jpg') no-repeat;;
     background-size: cover;
@@ -223,3 +223,4 @@ body {
                     inset 0 0 20px rgba(46, 139, 87, 0.4);
     }
 }
+
