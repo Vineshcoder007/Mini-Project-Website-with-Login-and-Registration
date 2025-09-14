@@ -24,7 +24,7 @@ body {
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
+    width: 75%;
     height: 550px;
     background: url('bg.jpg') no-repeat;;
     background-size: cover;
@@ -48,7 +48,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 56%;
+    width: 58%;
     height: 100%;
     background: transparent;
     padding: 80px;
@@ -61,6 +61,11 @@ body {
 
 .content .logo {
     font-size:35px;
+}
+
+.text-sci h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 .text-sci p {
@@ -84,7 +89,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 58%);
+    width: 37%;
     height: 100%;
     overflow: hidden;
 }
@@ -223,4 +228,3 @@ body {
                     inset 0 0 20px rgba(46, 139, 87, 0.4);
     }
 }
-
